@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int main(int argc, char** argv) {
-    float m[10]={2.5, 3.6, 2.1, 9.6, 4, 8.7, 2, 3, 1, 4.5};
-    float g[10]={2.5, 3.6, 2.1, 9.6, 4, 8.7, 2, 3, 1, 4.5};
+    float m[10];
+    for (int i = 0; i<10; ++i){
+        scanf("%f", &m[i]);
+    }
+    float *g=m;
     float x;
     int k;
     scanf("%f", &x);
